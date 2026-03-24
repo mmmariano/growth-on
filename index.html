@@ -1,1269 +1,1423 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="https://www.psipaulamarques.com.br/favicon.png" />
-<!-- SEO Básico -->
-<title>Psicóloga Online Paula Marques | Terapia Individual e de Casal</title>
-<meta name="description" content="Psicóloga com 15 anos de experiência. Especialista em terapia de casal, ansiedade e autoconhecimento. Atendimento online seguro e sigiloso. Agende sua sessão." />
-<meta name="keywords" content="Psicóloga Online, Terapia de Casal, Terapia Individual, Ansiedade, Paula Marques Psicologia, Psicoterapia Online" />
-<link rel="canonical" href="https://www.psipaulamarques.com.br" />
-
-<!-- Open Graph (WhatsApp, Facebook, Instagram) -->
-<meta property="og:locale" content="pt_BR" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Paula Marques | Terapia Individual e de Casal Online" />
-<meta property="og:description" content="Transforme seus relacionamentos e sua saúde emocional com atendimento especializado." />
-<meta property="og:url" content="https://www.psipaulamarques.com.br" />
-<meta property="og:site_name" content="Psi Paula Marques" />
-<meta property="og:image" content="https://www.psipaulamarques.com.br/terapia/foto-psi-perfil-paula-terapia-individual.webp" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:type" content="image/jpeg" />
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Psi Paula Marques | Terapia Online" />
-<meta name="twitter:description" content="Atendimento psicológico online para indivíduos e casais." />
-<meta name="twitter:image" content="https://www.psipaulamarques.com.br/terapia/foto-psi-perfil-paula-terapia-individual.webp" />  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  
-  <style>
-    :root {
-      --cream: #FAF7F2;
-      --warm-white: #FDF9F4;
-      --rose: #C4846A;
-      --rose-light: #E8C4B4;
-      --rose-dark: #9C5E45;
-      --sage: #8A9E8C;
-      --sage-light: #C8D8C8;
-      --text-dark: #2C2420;
-      --text-mid: #5A4A44;
-      --text-light: #8A7A74;
-      --gold: #C9A96E;
-      --border: rgba(196,132,106,0.2);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--text-dark);
-      overflow-x: hidden;
-    }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative;
-      height: 100vh;
-      min-height: 600px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      overflow: hidden;
-    }
-
-    .hero-text-side {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 60px 80px 80px;
-      background: var(--warm-white);
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-text-side::after {
-      content: '';
-      position: absolute;
-      right: -40px;
-      top: 0;
-      bottom: 0;
-      width: 80px;
-      background: var(--warm-white);
-      clip-path: polygon(0 0, 0 100%, 100% 100%);
-      z-index: 3;
-    }
-
-    .hero-tag {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--rose);
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .hero-tag::before {
-      content: '';
-      display: inline-block;
-      width: 32px;
-      height: 1px;
-      background: var(--rose);
-    }
-
-    .hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(36px, 4.5vw, 58px);
-      font-weight: 300;
-      line-height: 1.15;
-      color: var(--text-dark);
-      margin-bottom: 24px;
-    }
-
-    .hero h1 em {
-      font-style: italic;
-      color: var(--rose);
-    }
-
-    .hero-desc {
-      font-size: 16px;
-      line-height: 1.75;
-      color: var(--text-mid);
-      max-width: 440px;
-      margin-bottom: 40px;
-    }
-
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--rose);
-      color: white;
-      padding: 16px 32px;
-      border-radius: 50px;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-primary:hover {
-      background: var(--rose-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 12px 32px rgba(196,132,106,0.35);
-    }
-
-    .btn-primary svg { flex-shrink: 0; }
-
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: transparent;
-      color: var(--rose);
-      padding: 15px 32px;
-      border-radius: 50px;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      border: 1.5px solid var(--rose);
-      cursor: pointer;
-    }
-
-    .btn-outline:hover {
-      background: var(--rose);
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    .hero-photo-side {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-photo-side img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-    }
-
-    /* decorative circle */
-    .deco-circle {
-      position: absolute;
-      border-radius: 50%;
-      border: 1px solid var(--border);
-      pointer-events: none;
-    }
-
-    /* ── SECTION BASE ── */
-    section { padding: 100px 0; }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 40px;
-    }
-
-    .section-label {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--rose);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .section-label::before {
-      content: '';
-      display: inline-block;
-      width: 28px;
-      height: 1px;
-      background: var(--rose);
-    }
-
-    .section-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(30px, 4vw, 48px);
-      font-weight: 300;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-
-    .section-title em { font-style: italic; color: var(--rose); }
-
-    .section-sub {
-      font-size: 16px;
-      line-height: 1.8;
-      color: var(--text-mid);
-      max-width: 560px;
-    }
-
-    /* ── INTRO STRIP ── */
-    .intro-strip {
-      background: var(--rose);
-      padding: 28px 0;
-    }
-
-    .intro-strip .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
-    }
-
-    .strip-item {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      color: white;
-    }
-
-    .strip-icon {
-      width: 42px;
-      height: 42px;
-      border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .strip-item span {
-      font-size: 14px;
-      font-weight: 400;
-      opacity: 0.95;
-    }
-
-    /* ── INDIVIDUAL THERAPY ── */
-    .therapy-individual {
-      background: var(--warm-white);
-    }
-
-    .therapy-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .therapy-photo {
-      position: relative;
-    }
-
-    .therapy-photo img {
-      width: 100%;
-      height: 520px;
-      object-fit: cover;
-      border-radius: 4px 80px 4px 80px;
-    }
-
-    .photo-badge {
-      position: absolute;
-      bottom: -20px;
-      right: -20px;
-      background: var(--rose);
-      color: white;
-      padding: 20px 28px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 16px 48px rgba(196,132,106,0.4);
-    }
-
-    .photo-badge strong {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 36px;
-      font-weight: 600;
-      display: block;
-      line-height: 1;
-    }
-
-    .photo-badge span {
-      font-size: 11px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      opacity: 0.85;
-    }
-
-    .therapy-content { padding: 20px 0; }
-
-    .therapy-list {
-      list-style: none;
-      margin: 32px 0 40px;
-      display: grid;
-      gap: 14px;
-    }
-
-    .therapy-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      font-size: 15px;
-      color: var(--text-mid);
-      line-height: 1.6;
-    }
-
-    .check-icon {
-      width: 22px;
-      height: 22px;
-      background: var(--rose-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .check-icon svg { width: 11px; height: 11px; }
-
-    /* ── COUPLE THERAPY ── */
-    .therapy-couple {
-      background: var(--text-dark);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .therapy-couple::before {
-      content: '';
-      position: absolute;
-      top: -200px;
-      right: -200px;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(196,132,106,0.12) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .therapy-couple .section-title { color: var(--cream); }
-    .therapy-couple .section-label { color: var(--rose-light); }
-    .therapy-couple .section-label::before { background: var(--rose-light); }
-    .therapy-couple .section-sub { color: rgba(250,247,242,0.7); }
-
-    .couple-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .couple-cards {
-      display: grid;
-      gap: 16px;
-    }
-
-    .couple-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 24px;
-      display: flex;
-      gap: 18px;
-      align-items: flex-start;
-      transition: all 0.3s;
-    }
-
-    .couple-card:hover {
-      background: rgba(196,132,106,0.12);
-      border-color: rgba(196,132,106,0.3);
-      transform: translateX(6px);
-    }
-
-    .card-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
-      font-weight: 300;
-      color: var(--rose);
-      line-height: 1;
-      flex-shrink: 0;
-    }
-
-    .card-text h4 {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--cream);
-      margin-bottom: 6px;
-    }
-
-    .card-text p {
-      font-size: 13px;
-      color: rgba(250,247,242,0.6);
-      line-height: 1.6;
-    }
-
-    .couple-right { padding: 20px 0; }
-
-    /* ── COMPARISON ── */
-    .comparison {
-      background: var(--cream);
-    }
-
-    .comparison-header { text-align: center; margin-bottom: 60px; }
-    .comparison-header .section-sub { margin: 0 auto; }
-
-    .compare-grid {
-      display: grid;
-      grid-template-columns: 1fr 60px 1fr;
-      gap: 0;
-      align-items: start;
-    }
-
-    .compare-col {
-      border-radius: 16px;
-      overflow: hidden;
-    }
-
-    .compare-col.without {
-      background: #F0EBE5;
-    }
-
-    .compare-col.with {
-      background: var(--rose);
-    }
-
-    .compare-head {
-      padding: 24px 32px;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    .compare-col.without .compare-head { color: var(--text-mid); }
-    .compare-col.with .compare-head { color: white; }
-
-    .compare-item {
-      padding: 16px 32px;
-      font-size: 14px;
-      line-height: 1.6;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      border-top: 1px solid rgba(0,0,0,0.06);
-    }
-
-    .compare-col.with .compare-item { border-top-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.9); }
-    .compare-col.without .compare-item { color: var(--text-mid); }
-
-    .vs-col {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 20px;
-    }
-
-    .vs-badge {
-      width: 48px;
-      height: 48px;
-      background: var(--text-dark);
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    /* ── HOW IT WORKS ── */
-    .how-it-works {
-      background: var(--warm-white);
-    }
-
-    .how-header { margin-bottom: 60px; }
-
-    .steps-row {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-      position: relative;
-    }
-
-    .steps-row::before {
-      content: '';
-      position: absolute;
-      top: 32px;
-      left: 12.5%;
-      right: 12.5%;
-      height: 1px;
-      background: linear-gradient(to right, var(--rose-light), var(--rose), var(--rose-light));
-      z-index: 0;
-    }
-
-    .step {
-      background: var(--warm-white);
-      padding: 0 20px 40px;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    .step-num {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: var(--cream);
-      border: 2px solid var(--rose);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;
-      color: var(--rose);
-      font-weight: 500;
-    }
-
-    .step h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;
-      font-weight: 500;
-      color: var(--text-dark);
-      margin-bottom: 10px;
-    }
-
-    .step p {
-      font-size: 13px;
-      color: var(--text-light);
-      line-height: 1.7;
-    }
-
-    /* ── CTA BAND ── */
-    .cta-band {
-      background: linear-gradient(135deg, var(--rose-dark) 0%, var(--rose) 50%, #D49A82 100%);
-      padding: 80px 0;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cta-band::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(255,255,255,0.08)'/%3E%3C/svg%3E");
-    }
-
-    .cta-band h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(28px, 4vw, 48px);
-      font-weight: 300;
-      color: white;
-      margin-bottom: 16px;
-      position: relative;
-    }
-
-    .cta-band p {
-      font-size: 16px;
-      color: rgba(255,255,255,0.85);
-      max-width: 500px;
-      margin: 0 auto 36px;
-      line-height: 1.7;
-      position: relative;
-    }
-
-    .btn-white {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: white;
-      color: var(--rose-dark);
-      padding: 16px 36px;
-      border-radius: 50px;
-      font-size: 15px;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.3s;
-      position: relative;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-white:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 16px 48px rgba(0,0,0,0.2);
-    }
-
-    /* ── INFO CARDS ── */
-    .info-section { background: var(--cream); }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 60px;
-    }
-
-    .info-card {
-      background: var(--warm-white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 40px 32px;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.3s;
-    }
-
-    .info-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--rose);
-      transform: scaleX(0);
-      transition: transform 0.3s;
-    }
-
-    .info-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(196,132,106,0.15); }
-    .info-card:hover::after { transform: scaleX(1); }
-
-    .info-icon {
-      width: 52px;
-      height: 52px;
-      background: var(--rose-light);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 24px;
-    }
-
-    .info-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;
-      font-weight: 500;
-      color: var(--text-dark);
-      margin-bottom: 12px;
-    }
-
-    .info-card p {
-      font-size: 14px;
-      color: var(--text-light);
-      line-height: 1.8;
-    }
-
-    /* ── TESTIMONIALS ── */
-    .testimonials {
-      background: var(--warm-white);
-    }
-
-    .testi-header { text-align: center; margin-bottom: 60px; }
-    .testi-header .section-label { justify-content: center; }
-    .testi-header .section-label::before { display: none; }
-    .testi-header .section-label::after {
-      content: '';
-      display: inline-block;
-      width: 28px;
-      height: 1px;
-      background: var(--rose);
-    }
-
-    .testi-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .testi-card {
-      background: var(--cream);
-      border-radius: 16px;
-      padding: 36px;
-      position: relative;
-    }
-
-    .testi-card::before {
-      content: '"';
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 80px;
-      color: var(--rose-light);
-      line-height: 1;
-      position: absolute;
-      top: 16px;
-      left: 28px;
-    }
-
-    .testi-text {
-      font-size: 14px;
-      line-height: 1.85;
-      color: var(--text-mid);
-      margin-bottom: 28px;
-      padding-top: 36px;
-    }
-
-    .testi-author {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .testi-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--rose-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;
-      color: var(--rose-dark);
-      font-weight: 500;
-    }
-
-    .testi-name strong {
-      display: block;
-      font-size: 14px;
-      color: var(--text-dark);
-    }
-
-    .testi-name span {
-      font-size: 12px;
-      color: var(--text-light);
-    }
-
-    .stars {
-      color: var(--gold);
-      font-size: 13px;
-      letter-spacing: 1px;
-      margin-bottom: 4px;
-    }
-
-    /* ── FINAL CTA ── */
-    .final-cta {
-      background: var(--cream);
-      text-align: center;
-      padding: 120px 0;
-    }
-
-    .final-cta .section-label { justify-content: center; }
-    .final-cta .section-label::before { display: none; }
-    .final-cta .section-title { margin: 0 auto 20px; max-width: 600px; }
-    .final-cta .section-sub { margin: 0 auto 40px; text-align: center; }
-
-    .btn-group {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    /* ── FLOATING WA ── */
-    .wa-float {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      width: 60px;
-      height: 60px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 8px 32px rgba(37,211,102,0.45);
-      z-index: 999;
-      transition: all 0.3s;
-      animation: pulse-wa 2.5s ease-in-out infinite;
-    }
-/* ── BOTÃO FLUTUANTE VOLTAR AO SITE ── */
-.voltar-float {
-  position: fixed;
-  bottom: 32px;
-  left: 32px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--text-dark);
-  color: white;
-  padding: 14px 22px;
-  border-radius: 50px;
-  font-size: 13px;
-  font-weight: 500;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrowthOn | Marketing & Performance Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red: #D91E18;
+  --black: #1C1C1C;
+  --white: #FFFFFF;
+  --green: #3ad06d;
+  --gray: #3A3A3A;
+  --gold: #c9a84c;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* CUSTOM CURSOR */
+.cursor {
+  width: 12px; height: 12px;
+  background: var(--red);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 99999;
+  transform: translate(-50%,-50%);
+  transition: transform 0.1s;
+  mix-blend-mode: difference;
+}
+.cursor-trail {
+  width: 36px; height: 36px;
+  border: 1px solid rgba(217,30,24,0.5);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 99998;
+  transform: translate(-50%,-50%);
+  transition: transform 0.25s ease, left 0.18s ease, top 0.18s ease;
+}
+
+/* CANVAS BACKGROUND */
+#particle-canvas {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+  opacity: 0.35;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 22px 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: linear-gradient(180deg, rgba(28,28,28,0.95) 0%, transparent 100%);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(217,30,24,0.15);
+  transition: background 0.4s;
+}
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: var(--white);
+  display: flex; align-items: center; gap: 6px;
+}
+.logo span { color: var(--red); }
+.logo-dot {
+  width: 8px; height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { transform: scale(1); opacity:1; }
+  50% { transform: scale(1.6); opacity:0.6; }
+}
+.nav-links { display: flex; gap: 36px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.7);
   text-decoration: none;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute; bottom: -4px; left: 0; right: 0;
+  height: 1px; background: var(--red);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.3s;
+}
+.nav-links a:hover { color: var(--white); }
+.nav-links a:hover::after { transform: scaleX(1); }
+.nav-cta {
+  background: var(--red);
+  color: var(--white) !important;
+  padding: 10px 24px;
+  border-radius: 2px;
+  font-weight: 700 !important;
+  transition: background 0.3s, transform 0.2s !important;
+}
+.nav-cta:hover { background: #b01612 !important; transform: translateY(-1px) !important; }
+.nav-cta::after { display: none !important; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+  padding: 120px 60px 80px;
+  z-index: 1;
+}
+.hero-bg-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(217,30,24,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217,30,24,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  animation: grid-drift 20s linear infinite;
+}
+@keyframes grid-drift {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(80px); }
+}
+.hero-glow {
+  position: absolute;
+  top: -200px; left: -200px;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(217,30,24,0.2) 0%, transparent 70%);
+  animation: glow-float 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.hero-glow-2 {
+  position: absolute;
+  bottom: -200px; right: -100px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(58,208,109,0.12) 0%, transparent 70%);
+  animation: glow-float 10s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+}
+@keyframes glow-float {
+  0% { transform: translate(0,0) scale(1); }
+  100% { transform: translate(40px,60px) scale(1.1); }
+}
+.hero-content { position: relative; z-index: 2; max-width: 760px; }
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(217,30,24,0.12);
+  border: 1px solid rgba(217,30,24,0.35);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 32px;
+  animation: fade-up 0.8s ease both;
+}
+.hero-tag-dot {
+  width: 7px; height: 7px;
+  background: var(--red);
+  border-radius: 50%;
+  animation: pulse-dot 1.2s infinite;
+}
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  animation: fade-up 0.8s ease 0.1s both;
+  overflow: hidden;
+}
+.hero-title .line { display: block; overflow: hidden; }
+.hero-title .word {
+  display: inline-block;
+  animation: slide-up 0.8s cubic-bezier(0.16,1,0.3,1) both;
+}
+.hero-title .accent { color: var(--red); }
+.hero-title .green { color: var(--green); }
+.hero-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.65);
+  max-width: 540px;
+  margin-bottom: 48px;
+  animation: fade-up 0.8s ease 0.3s both;
+  font-weight: 300;
+}
+.hero-subtitle strong { color: var(--white); font-weight: 700; }
+.hero-actions {
+  display: flex; gap: 20px; flex-wrap: wrap;
+  animation: fade-up 0.8s ease 0.4s both;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--red);
+  color: var(--white);
+  padding: 18px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none; cursor: pointer;
+  position: relative; overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 60%);
+  opacity: 0; transition: opacity 0.3s;
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 50px rgba(217,30,24,0.4); }
+.btn-primary:hover::before { opacity: 1; }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: transparent;
+  color: var(--white);
+  padding: 18px 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: border-color 0.3s, background 0.3s;
+}
+.btn-secondary:hover { border-color: var(--green); color: var(--green); }
+.btn-arrow { font-size: 1.1rem; transition: transform 0.3s; }
+.btn-primary:hover .btn-arrow { transform: translateX(4px); }
+
+/* METRICS */
+.metrics-bar {
+  position: relative; z-index: 2;
+  background: rgba(28,28,28,0.9);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 40px 60px;
+  display: flex; gap: 0;
+  overflow: hidden;
+}
+.metrics-bar::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--red), var(--green), transparent);
+  animation: shimmer-line 3s ease-in-out infinite;
+}
+@keyframes shimmer-line {
+  0% { transform: scaleX(0); opacity: 0; }
+  50% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(0); opacity: 0; }
+}
+.metric {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+  position: relative;
+}
+.metric:last-child { border-right: none; }
+.metric-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--white);
+  display: flex; align-items: baseline; justify-content: center; gap: 4px;
+}
+.metric-num .plus { color: var(--green); font-size: 2.5rem; }
+.metric-num .pct { color: var(--red); font-size: 2rem; }
+.metric-label {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-top: 8px;
+}
+
+/* SECTION BASE */
+section {
+  position: relative; z-index: 1;
+  padding: 120px 60px;
+}
+.section-tag {
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.section-tag::before {
+  content: '';
+  width: 30px; height: 1px;
+  background: var(--red);
+}
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.section-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.8;
+  max-width: 560px;
+  font-weight: 300;
+}
+
+/* SERVICES */
+.services { background: #111111; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  margin-top: 72px;
+}
+.service-card {
+  background: #111111;
+  padding: 52px 44px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s;
+  cursor: default;
+}
+.service-card::before {
+  content: '';
+  position: absolute; bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--red), var(--green));
+  transition: width 0.5s cubic-bezier(0.16,1,0.3,1);
+}
+.service-card:hover { background: #161616; }
+.service-card:hover::before { width: 100%; }
+.service-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: rgba(217,30,24,0.08);
+  line-height: 1;
+  margin-bottom: 20px;
+  transition: color 0.4s;
+}
+.service-card:hover .service-num { color: rgba(217,30,24,0.18); }
+.service-icon {
+  width: 52px; height: 52px;
+  border: 1px solid rgba(217,30,24,0.3);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 28px;
+  font-size: 1.5rem;
+  transition: border-color 0.3s, background 0.3s;
+}
+.service-card:hover .service-icon {
+  border-color: var(--red);
+  background: rgba(217,30,24,0.1);
+}
+.service-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+.service-desc {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+}
+
+/* METHODOLOGY */
+.methodology { background: var(--black); }
+.method-content { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.method-steps { margin-top: 48px; }
+.method-step {
+  display: flex; gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  transition: padding-left 0.3s;
+}
+.method-step:hover { padding-left: 12px; }
+.method-step::before {
+  content: '';
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 0; background: rgba(217,30,24,0.1);
+  transition: width 0.3s;
+}
+.method-step:hover::before { width: 3px; }
+.step-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: var(--red);
+  min-width: 40px;
+  padding-top: 2px;
+}
+.step-info {}
+.step-name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.step-desc { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.7; }
+.method-visual {
+  position: relative;
+  aspect-ratio: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+.method-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid;
+  animation: ring-spin linear infinite;
+}
+.ring-1 {
+  width: 100%; height: 100%;
+  border-color: rgba(217,30,24,0.12);
+  animation-duration: 30s;
+}
+.ring-2 {
+  width: 80%; height: 80%;
+  border-color: rgba(58,208,109,0.1);
+  animation-duration: 20s;
+  animation-direction: reverse;
+  border-style: dashed;
+}
+.ring-3 {
+  width: 60%; height: 60%;
+  border-color: rgba(217,30,24,0.15);
+  animation-duration: 15s;
+}
+@keyframes ring-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.method-center {
+  width: 180px; height: 180px;
+  background: linear-gradient(135deg, var(--red) 0%, #8b0f0b 100%);
+  border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  box-shadow: 0 0 80px rgba(217,30,24,0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+  position: relative; z-index: 2;
+}
+.method-center-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem; line-height: 1;
+}
+.method-center-label { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; }
+.orbit-dot {
+  position: absolute;
+  width: 10px; height: 10px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--green);
+}
+.orbit-dot-1 { top: 5%; left: 50%; animation: orbit-1 30s linear infinite; }
+.orbit-dot-2 { top: 50%; left: 5%; animation: orbit-2 20s linear infinite; }
+@keyframes orbit-1 { from { transform: rotate(0) translateX(0); } to { transform: rotate(360deg) translateX(0); } }
+@keyframes orbit-2 { from { transform: rotate(0) translateX(0); } to { transform: rotate(-360deg) translateX(0); } }
+
+/* RESULTS */
+.results { background: #0d0d0d; overflow: hidden; }
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 72px;
+}
+.result-card {
+  background: linear-gradient(135deg, #161616 0%, #111111 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 44px 36px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.result-card::after {
+  content: '';
+  position: absolute;
+  top: -100%; left: -100%;
+  width: 300%; height: 300%;
+  background: linear-gradient(135deg, transparent 40%, rgba(217,30,24,0.04) 50%, transparent 60%);
+  transition: top 0.6s, left 0.6s;
+}
+.result-card:hover { transform: translateY(-6px); box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
+.result-card:hover::after { top: -50%; left: -50%; }
+.result-icon-wrap {
+  width: 56px; height: 56px;
+  background: rgba(217,30,24,0.1);
+  border: 1px solid rgba(217,30,24,0.25);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 28px;
+}
+.result-value {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.result-value span { color: var(--green); }
+.result-title { font-weight: 700; font-size: 1rem; margin-bottom: 12px; }
+.result-desc { font-size: 0.83rem; color: rgba(255,255,255,0.45); line-height: 1.7; }
+.result-bar {
+  position: absolute; bottom: 0; left: 0;
+  height: 3px; background: linear-gradient(90deg, var(--red), var(--green));
+  transition: width 1.5s ease;
+}
+
+/* DIFFERENTIALS */
+.differentials { background: var(--black); }
+.diff-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 72px;
+}
+.diff-list { display: flex; flex-direction: column; gap: 4px; }
+.diff-item {
+  display: flex; align-items: flex-start; gap: 20px;
+  padding: 28px 32px;
+  border-left: 2px solid transparent;
+  transition: border-color 0.3s, background 0.3s, padding-left 0.3s;
+  cursor: default;
+}
+.diff-item:hover {
+  border-color: var(--red);
+  background: rgba(217,30,24,0.04);
+  padding-left: 40px;
+}
+.diff-check {
+  width: 28px; height: 28px; min-width: 28px;
+  border: 1px solid var(--green);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--green);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+.diff-text {}
+.diff-title { font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
+.diff-sub { font-size: 0.83rem; color: rgba(255,255,255,0.45); line-height: 1.6; }
+
+/* LEAD FORM */
+.lead-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+  position: relative;
+  overflow: hidden;
+}
+.lead-section::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse 80% 80% at 10% 50%, rgba(217,30,24,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 90% 50%, rgba(58,208,109,0.05) 0%, transparent 60%);
+}
+.lead-inner {
+  position: relative; z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 100px;
+  align-items: center;
+}
+.lead-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(58,208,109,0.1);
+  border: 1px solid rgba(58,208,109,0.3);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 32px;
+}
+.lead-items { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
+.lead-item {
+  display: flex; align-items: center; gap: 16px;
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.75);
+}
+.lead-item::before {
+  content: '→';
+  color: var(--red);
+  font-weight: 700;
+}
+.form-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 56px 48px;
+  position: relative;
+}
+.form-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--red), var(--green));
+}
+.form-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.form-subtitle { font-size: 0.85rem; color: rgba(255,255,255,0.45); margin-bottom: 36px; }
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.form-group input, .form-group select {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white);
+  padding: 16px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s, background 0.3s;
+  appearance: none;
+}
+.form-group input::placeholder { color: rgba(255,255,255,0.2); }
+.form-group input:focus, .form-group select:focus {
+  border-color: var(--red);
+  background: rgba(217,30,24,0.06);
+}
+.form-group select option { background: #1c1c1c; }
+.btn-form {
+  width: 100%;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 8px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.btn-form::before {
+  content: '';
+  position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.4s;
+}
+.btn-form:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(217,30,24,0.45); }
+.btn-form:hover::before { left: 100%; }
+.form-trust {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.3);
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.form-trust::before { content: '🔒'; font-size: 0.9rem; }
+
+/* FOOTER */
+footer {
+  background: #0a0a0a;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: relative; z-index: 1;
+}
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+}
+.footer-logo span { color: var(--red); }
+.footer-info { font-size: 0.78rem; color: rgba(255,255,255,0.3); line-height: 1.8; }
+.footer-wpp {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #25d366;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 1px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.footer-wpp:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(37,211,102,0.35); }
+
+/* FLOATING CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 36px; right: 36px;
+  background: #25d366;
+  color: white;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem;
+  text-decoration: none;
   z-index: 999;
-  transition: all 0.3s;
+  box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+  animation: float-cta 3s ease-in-out infinite;
+  transition: transform 0.25s;
+}
+.floating-cta:hover { transform: scale(1.1); }
+@keyframes float-cta {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.floating-cta:hover { animation: none; transform: scale(1.12); }
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px; left: 60px;
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  z-index: 2;
+}
+.scroll-line {
+  width: 40px; height: 1px;
+  background: rgba(255,255,255,0.2);
+  position: relative;
+  overflow: hidden;
+}
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  left: -100%; top: 0;
+  width: 100%; height: 100%;
+  background: var(--red);
+  animation: scroll-anim 2s ease-in-out infinite;
+}
+@keyframes scroll-anim {
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
 
-.voltar-float:hover {
-  background: var(--rose-dark);
-  transform: translateX(-3px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+/* ANIMATIONS */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-    .wa-float:hover {
-      transform: scale(1.12);
-      box-shadow: 0 12px 40px rgba(37,211,102,0.6);
-    }
-
-    @keyframes pulse-wa {
-      0%, 100% { box-shadow: 0 8px 32px rgba(37,211,102,0.45); }
-      50% { box-shadow: 0 8px 48px rgba(37,211,102,0.7); }
-    }
-
-    /* ── ANIMATIONS ── */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .fade-up.visible {
-      opacity: 1;
-      transform: none;
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; height: auto; min-height: auto; }
-      .hero-text-side { padding: 80px 32px; }
-      .hero-text-side::after { display: none; }
-      .hero-photo-side { height: 340px; }
-      .therapy-grid, .couple-grid { grid-template-columns: 1fr; gap: 40px; }
-      .compare-grid { grid-template-columns: 1fr; gap: 0; }
-      .vs-col { padding: 12px 0; }
-      .steps-row { grid-template-columns: 1fr 1fr; }
-      .steps-row::before { display: none; }
-      .info-grid, .testi-grid { grid-template-columns: 1fr; }
-      .container { padding: 0 24px; }
-      section { padding: 72px 0; }
-    }
-  </style>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Psychologist",
-  "name": "Paula Marques - Psicologia Online",
-  "image": "https://www.psipaulamarques.com.br/foto-psi-perfil-paula-terapia-individual.webp",
-  "@id": "https://www.psipaulamarques.com.br",
-  "url": "https://www.psipaulamarques.com.br",
-  "telephone": "+5571982415102",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Atendimento Online",
-    "addressLocality": "Salvador",
-    "addressRegion": "BA",
-    "addressCountry": "BR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -12.9714,
-    "longitude": -38.5014
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "08:00",
-    "closes": "20:00"
-  },
-  "sameAs": [
-    "https://www.instagram.com/psipaulamarques"
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "48"
-  }
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Como funciona a terapia online?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "As sessões são realizadas via vídeo-chamada, com duração de 50 a 60 minutos, garantindo total sigilo e privacidade conforme as normas do Conselho Federal de Psicologia."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Qual a duração das sessões?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Tanto a terapia individual quanto a de casal têm duração média de 50 a 60 minutos por sessão."
-    }
-  }]
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16,1,0.3,1);
 }
-</script>
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* NOISE OVERLAY */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  position: fixed; top: 0; left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--red), var(--green));
+  z-index: 10001;
+  width: 0%;
+  transition: width 0.1s;
+}
+
+/* SPLIT TEXT */
+.split-char {
+  display: inline-block;
+  animation: char-in 0.6s cubic-bezier(0.16,1,0.3,1) both;
+}
+@keyframes char-in {
+  from { opacity: 0; transform: translateY(20px) rotateX(40deg); }
+  to { opacity: 1; transform: translateY(0) rotateX(0); }
+}
+
+/* TICKER */
+.ticker-wrap {
+  background: var(--red);
+  padding: 14px 0;
+  overflow: hidden;
+  position: relative; z-index: 2;
+}
+.ticker-track {
+  display: flex;
+  animation: ticker 25s linear infinite;
+  white-space: nowrap;
+}
+.ticker-item {
+  flex-shrink: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  padding: 0 40px;
+  color: rgba(255,255,255,0.85);
+  display: flex; align-items: center; gap: 20px;
+}
+.ticker-item::after { content: '◆'; color: rgba(255,255,255,0.4); font-size: 0.5rem; }
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* SUCCESS OVERLAY */
+.success-overlay {
+  display: none;
+  position: absolute; inset: 0;
+  background: rgba(10,10,10,0.97);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+.success-overlay.show { display: flex; animation: fade-up 0.5s ease; }
+.success-check { font-size: 4rem; margin-bottom: 20px; }
+.success-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; margin-bottom: 12px; color: var(--green); }
+.success-msg { font-size: 0.9rem; color: rgba(255,255,255,0.55); }
+
+@media (max-width: 900px) {
+  nav { padding: 20px 24px; }
+  .nav-links { display: none; }
+  section { padding: 80px 24px; }
+  .hero { padding: 100px 24px 80px; }
+  .metrics-bar { padding: 30px 24px; flex-wrap: wrap; }
+  .metric { min-width: 50%; }
+  .services-grid { grid-template-columns: 1fr; }
+  .method-content { grid-template-columns: 1fr; }
+  .method-visual { display: none; }
+  .results-grid { grid-template-columns: 1fr; }
+  .diff-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .lead-inner { grid-template-columns: 1fr; gap: 40px; }
+  footer { flex-direction: column; gap: 30px; text-align: center; padding: 40px 24px; }
+}
+</style>
 </head>
 <body>
-  <!-- BOTÃO FLUTUANTE VOLTAR AO SITE -->
-<a href="https://www.psipaulamarques.com.br" class="voltar-float" target="_blank" rel="noopener" title="Voltar ao site">
-  <svg width="16" height="16" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
-    <path d="M19 12H5M12 5l-7 7 7 7"/>
-  </svg>
-  Voltar ao site
-</a>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Gostaria%20de%20mais%20informações%20sobre%20a%20terapia." class="wa-float" target="_blank" rel="noopener" title="Fale pelo WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+<canvas id="particle-canvas"></canvas>
 
-<!-- ════════ HERO ════════ -->
-<section class="hero" style="padding:0">
-  <div class="hero-text-side">
-    <span class="hero-tag">Psi Paula Marques</span>
-    <h1>Terapia que <em>transforma</em> vidas e relacionamentos</h1>
-    <p class="hero-desc">Atendimentos individuais e para casais com escuta qualificada, técnicas científicas e resultados reais — de onde você estiver.</p>
-    <div class="btn-group">
-      <a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Quero%20agendar%20uma%20sessão." class="btn-primary" target="_blank">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Agendar pelo WhatsApp
-      </a>
-      <a href="#terapia-individual" class="btn-outline">Conhecer a terapia</a>
+<!-- NAV -->
+<nav id="navbar">
+  <div class="logo">Growth<span>On</span><span class="logo-dot"></span></div>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#metodologia">Metodologia</a></li>
+    <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#contato" class="nav-cta">Falar Agora</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><span class="hero-tag-dot"></span>Agência de Marketing & Performance</div>
+    <h1 class="hero-title">
+      <span class="line"><span class="word">Seu negócio</span></span>
+      <span class="line"><span class="word accent">crescendo</span></span>
+      <span class="line"><span class="word">de forma</span> <span class="word green">previsível</span></span>
+    </h1>
+    <p class="hero-subtitle">
+      A GrowthOn transforma sua empresa com estratégias completas — da atração ao fechamento. <strong>Mais leads qualificados, mais vendas, faturamento escalável.</strong>
+    </p>
+    <div class="hero-actions">
+      <a href="#contato" class="btn-primary">Quero Crescer Agora <span class="btn-arrow">→</span></a>
+      <a href="#servicos" class="btn-secondary">Ver Serviços</a>
     </div>
   </div>
-  <div class="hero-photo-side">
-    <!-- Substitua pelo caminho correto da sua imagem -->
-    <img src="terapia-foto-grande.webp" alt="Psi Paula Marques — Terapia" />
+  <div class="scroll-indicator">
+    <span class="scroll-line"></span>
+    Role para baixo
   </div>
 </section>
 
-<!-- ════════ STRIP ════════ -->
-<div class="intro-strip">
-  <div class="container">
-    <div class="strip-item">
-      <div class="strip-icon">
-        <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-      </div>
-      <span>Sessões de 50–60 minutos</span>
-    </div>
-    <div class="strip-item">
-      <div class="strip-icon">
-        <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-      </div>
-      <span>Atendimento 100% Online</span>
-    </div>
-    <div class="strip-item">
-      <div class="strip-icon">
-        <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <span>Total sigilo e privacidade</span>
-    </div>
-    <div class="strip-item">
-      <div class="strip-icon">
-        <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-      </div>
-      <span>+15 anos de experiência</span>
-    </div>
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track" id="ticker">
+    <span class="ticker-item">Tráfego Pago</span>
+    <span class="ticker-item">Meta Ads</span>
+    <span class="ticker-item">Google Ads</span>
+    <span class="ticker-item">Landing Pages</span>
+    <span class="ticker-item">CRM & Vendas</span>
+    <span class="ticker-item">Criativos</span>
+    <span class="ticker-item">Growth Marketing</span>
+    <span class="ticker-item">Performance Digital</span>
+    <span class="ticker-item">Tráfego Pago</span>
+    <span class="ticker-item">Meta Ads</span>
+    <span class="ticker-item">Google Ads</span>
+    <span class="ticker-item">Landing Pages</span>
+    <span class="ticker-item">CRM & Vendas</span>
+    <span class="ticker-item">Criativos</span>
+    <span class="ticker-item">Growth Marketing</span>
+    <span class="ticker-item">Performance Digital</span>
   </div>
 </div>
 
-<!-- ════════ TERAPIA INDIVIDUAL ════════ -->
-<section class="therapy-individual" id="terapia-individual">
-  <div class="container">
-    <div class="therapy-grid">
-      <div class="therapy-photo fade-up">
-        <!-- Substitua pelo caminho correto da sua imagem -->
-        <img src="foto-psi-perfil-paula-terapia-individual.webp" alt="Psi Paula Marques — Terapia Individual" />
-        <div class="photo-badge">
-          <strong>+15</strong>
-          <span>Anos de atendimento</span>
-        </div>
-      </div>
-      <div class="therapy-content fade-up">
-        <span class="section-label">Para você</span>
-        <h2 class="section-title">Terapia <em>Individual</em></h2>
-        <p class="section-sub">Um espaço seguro, acolhedor e 100% confidencial para você trabalhar suas emoções, comportamentos e padrões — e construir a vida que deseja.</p>
-        <ul class="therapy-list">
-          <li>
-            <span class="check-icon"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1" stroke="#C4846A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            Ansiedade, estresse e insegurança emocional
-          </li>
-          <li>
-            <span class="check-icon"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1" stroke="#C4846A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            Autoestima, autoconhecimento e desenvolvimento pessoal
-          </li>
-          <li>
-            <span class="check-icon"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1" stroke="#C4846A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            Traumas, lutos e feridas emocionais do passado
-          </li>
-          <li>
-            <span class="check-icon"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1" stroke="#C4846A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            Dificuldades nos relacionamentos afetivos e familiares
-          </li>
-          <li>
-            <span class="check-icon"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1" stroke="#C4846A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            Sexualidade, disfunções e questões íntimas
-          </li>
-          <li>
-            <span class="check-icon"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1" stroke="#C4846A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            Padrões repetitivos em relacionamentos e na vida
-          </li>
-        </ul>
-        <a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Tenho%20interesse%20na%20Terapia%20Individual." class="btn-primary" target="_blank">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Quero iniciar minha terapia
-        </a>
-      </div>
-    </div>
+<!-- METRICS -->
+<div class="metrics-bar">
+  <div class="metric">
+    <div class="metric-num"><span class="counter" data-target="300">0</span><span class="plus">+</span></div>
+    <div class="metric-label">Leads Gerados por Mês</div>
   </div>
-</section>
-
-<!-- ════════ CTA BAND 1 ════════ -->
-<div class="cta-band">
-  <div class="container">
-    <h2>Dar o primeiro passo é o mais importante</h2>
-    <p>Milhares de pessoas já transformaram suas vidas com a terapia. Você pode ser a próxima.</p>
-    <a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Quero%20saber%20mais%20sobre%20a%20terapia." class="btn-white" target="_blank">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="#9C5E45"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Falar com a Paula agora
-    </a>
+  <div class="metric">
+    <div class="metric-num"><span class="counter" data-target="47">0</span><span class="pct">%</span></div>
+    <div class="metric-label">Aumento Médio em Vendas</div>
+  </div>
+  <div class="metric">
+    <div class="metric-num"><span class="counter" data-target="85">0</span><span class="pct">%</span></div>
+    <div class="metric-label">Taxa de Retenção de Clientes</div>
+  </div>
+  <div class="metric">
+    <div class="metric-num"><span class="counter" data-target="3">0</span><span class="pct">x</span></div>
+    <div class="metric-label">Retorno Médio Sobre Investimento</div>
   </div>
 </div>
 
-<!-- ════════ TERAPIA DE CASAL ════════ -->
-<section class="therapy-couple" id="terapia-casal">
-  <div class="container">
-    <div class="couple-grid">
-      <div class="couple-right fade-up">
-        <span class="section-label">Para vocês dois</span>
-        <h2 class="section-title">Terapia de <em>Casal</em></h2>
-        <p class="section-sub">A restauração é possível. Conflitos, falta de desejo, traição, ciúmes — juntos podemos trabalhar cada desafio e resgatar o amor, a cumplicidade e a paz no relacionamento.</p>
-        <div style="margin-top:36px">
-          <a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Tenho%20interesse%20na%20Terapia%20de%20Casal." class="btn-primary" target="_blank" style="margin-top:8px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Quero salvar meu relacionamento
-          </a>
+<!-- SERVICES -->
+<section class="services reveal" id="servicos">
+  <div class="section-tag">O Que Fazemos</div>
+  <h2 class="section-title">SERVIÇOS QUE<br><span style="color:var(--red)">GERAM RESULTADO</span></h2>
+  <p class="section-sub">Cada serviço é pensado para gerar crescimento real, não apenas métricas de vaidade.</p>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-icon">🎯</div>
+      <div class="service-name">Tráfego Pago</div>
+      <p class="service-desc">Gestão estratégica de campanhas em Meta Ads e Google Ads. Leads qualificados que chegam prontos para comprar.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">02</div>
+      <div class="service-icon">⚡</div>
+      <div class="service-name">Criativos & Copies</div>
+      <p class="service-desc">Desenvolvimento de anúncios e copies estratégicos focados em conversão. Mensagem certa, para a pessoa certa, na hora certa.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">03</div>
+      <div class="service-icon">🏗️</div>
+      <div class="service-name">Landing Pages</div>
+      <p class="service-desc">Estruturas otimizadas para conversão. Transformamos visitantes em leads qualificados com alta performance.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">04</div>
+      <div class="service-icon">📱</div>
+      <div class="service-name">Conteúdo Digital</div>
+      <p class="service-desc">Produção de conteúdo para redes sociais com foco em engajamento, autoridade e geração de demanda orgânica.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">05</div>
+      <div class="service-icon">💼</div>
+      <div class="service-name">CRM & Comercial</div>
+      <p class="service-desc">Implementação de processos, scripts de vendas e CRM para aumentar drasticamente sua taxa de fechamento.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">06</div>
+      <div class="service-icon">📊</div>
+      <div class="service-name">Analytics & Escala</div>
+      <p class="service-desc">Análises profundas, relatórios de performance e otimizações contínuas para escalar os resultados sem parar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="methodology" id="metodologia">
+  <div class="method-content">
+    <div class="reveal-left">
+      <div class="section-tag">Como Trabalhamos</div>
+      <h2 class="section-title">NOSSA<br><span style="color:var(--green)">METODOLOGIA</span></h2>
+      <p class="section-sub">Um processo estruturado do início ao fim. Cada etapa pensada para maximizar seus resultados.</p>
+      <div class="method-steps">
+        <div class="method-step">
+          <span class="step-num">01</span>
+          <div class="step-info">
+            <div class="step-name">Onboarding Estruturado</div>
+            <div class="step-desc">Imersão completa no seu negócio, público e objetivos para criar a estratégia perfeita.</div>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="step-num">02</span>
+          <div class="step-info">
+            <div class="step-name">Planejamento Estratégico</div>
+            <div class="step-desc">Definição de metas, canais, budget e roadmap de crescimento personalizado.</div>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="step-num">03</span>
+          <div class="step-info">
+            <div class="step-name">Produção & Lançamento</div>
+            <div class="step-desc">Criação de campanhas, criativos e estruturas de conversão com alto padrão de qualidade.</div>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="step-num">04</span>
+          <div class="step-info">
+            <div class="step-name">Otimização Contínua</div>
+            <div class="step-desc">Testes A/B, análise de dados e ajustes constantes para maximizar o ROAS.</div>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="step-num">05</span>
+          <div class="step-info">
+            <div class="step-name">Escala & Crescimento</div>
+            <div class="step-desc">Com a base sólida, escalamos os investimentos e resultados de forma previsível.</div>
+          </div>
         </div>
       </div>
-      <div class="couple-cards fade-up">
-        <div class="couple-card">
-          <span class="card-num">01</span>
-          <div class="card-text">
-            <h4>Disfunções sexuais e falta de desejo</h4>
-            <p>Reconectando intimidade e desejo com técnicas especializadas em sexualidade do casal.</p>
-          </div>
+    </div>
+    <div class="method-visual reveal-right">
+      <div class="method-ring ring-1">
+        <div class="orbit-dot orbit-dot-1"></div>
+      </div>
+      <div class="method-ring ring-2">
+        <div class="orbit-dot orbit-dot-2"></div>
+      </div>
+      <div class="method-ring ring-3"></div>
+      <div class="method-center">
+        <div class="method-center-num">360°</div>
+        <div class="method-center-label">Growth Strategy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results reveal" id="resultados">
+  <div class="section-tag">Resultados Reais</div>
+  <h2 class="section-title">NÚMEROS QUE<br><span style="color:var(--red)">FALAM SOZINHOS</span></h2>
+  <div class="results-grid">
+    <div class="result-card reveal">
+      <div class="result-icon-wrap">📈</div>
+      <div class="result-value"><span class="counter" data-target="4">0</span>x</div>
+      <div class="result-title">Aumento em Leads Qualificados</div>
+      <p class="result-desc">Cliente do setor de serviços passou de 20 para 80+ leads/mês em 60 dias de campanha.</p>
+      <div class="result-bar" style="width: 80%"></div>
+    </div>
+    <div class="result-card reveal">
+      <div class="result-icon-wrap">💰</div>
+      <div class="result-value">R$<span class="counter" data-target="120">0</span>k</div>
+      <div class="result-title">Faturamento Gerado em 90 dias</div>
+      <p class="result-desc">Estratégia integrada de tráfego pago + comercial para empresa B2B com investimento de R$8k/mês.</p>
+      <div class="result-bar" style="width: 95%"></div>
+    </div>
+    <div class="result-card reveal">
+      <div class="result-icon-wrap">⚡</div>
+      <div class="result-value"><span class="counter" data-target="67">0</span>%</div>
+      <div class="result-title">Redução no Custo por Lead</div>
+      <p class="result-desc">Otimização de campanhas existentes sem aumento de budget. Eficiência máxima no investimento.</p>
+      <div class="result-bar" style="width: 67%"></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIALS -->
+<section class="differentials" id="diferenciais">
+  <div class="diff-wrap">
+    <div class="reveal-left">
+      <div class="section-tag">Por Que a GrowthOn</div>
+      <h2 class="section-title">O QUE NOS<br><span style="color:var(--green)">DIFERENCIA</span></h2>
+      <p class="section-sub">Não somos mais uma agência que entrega relatórios bonitos. Somos parceiros de crescimento que vivem pelo seu resultado.</p>
+      <div style="margin-top: 48px;">
+        <a href="#contato" class="btn-primary">Começar Agora <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+    <div class="diff-list reveal-right">
+      <div class="diff-item">
+        <div class="diff-check">✓</div>
+        <div class="diff-text">
+          <div class="diff-title">Foco em Vendas, Não Só Marketing</div>
+          <div class="diff-sub">Toda estratégia é desenhada para aumentar seu faturamento, não apenas seguidores ou cliques.</div>
         </div>
-        <div class="couple-card">
-          <span class="card-num">02</span>
-          <div class="card-text">
-            <h4>Conflitos e comunicação agressiva</h4>
-            <p>Desenvolvendo comunicação assertiva e estratégias para resolução saudável de conflitos.</p>
-          </div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-check">✓</div>
+        <div class="diff-text">
+          <div class="diff-title">Estratégia 100% Personalizada</div>
+          <div class="diff-sub">Nada de template. Cada cliente tem um plano único construído para o seu mercado e público.</div>
         </div>
-        <div class="couple-card">
-          <span class="card-num">03</span>
-          <div class="card-text">
-            <h4>Ciúmes, traição e desconfiança</h4>
-            <p>Trabalhando a reconstrução da confiança com ferramentas terapêuticas comprovadas.</p>
-          </div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-check">✓</div>
+        <div class="diff-text">
+          <div class="diff-title">Integração Marketing + Comercial</div>
+          <div class="diff-sub">Alinhamos seu time de vendas com o marketing para maximizar a taxa de fechamento.</div>
         </div>
-        <div class="couple-card">
-          <span class="card-num">04</span>
-          <div class="card-text">
-            <h4>Finanças, família e interferências externas</h4>
-            <p>Alinhando valores, sonhos e prioridades para o casal caminhar junto na mesma direção.</p>
-          </div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-check">✓</div>
+        <div class="diff-text">
+          <div class="diff-title">Acompanhamento Constante</div>
+          <div class="diff-sub">Reuniões semanais, relatórios detalhados e otimizações em tempo real. Você sempre sabe o que está acontecendo.</div>
         </div>
-        <div class="couple-card">
-          <span class="card-num">05</span>
-          <div class="card-text">
-            <h4>Processo de separação</h4>
-            <p>Suporte emocional e prático para um processo mais saudável, especialmente quando há filhos.</p>
-          </div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-check">✓</div>
+        <div class="diff-text">
+          <div class="diff-title">Crescimento Baseado em Dados</div>
+          <div class="diff-sub">Cada decisão é embasada em números reais. Sem achismos, sem desperdício de budget.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ COMPARISON ════════ -->
-<section class="comparison">
-  <div class="container">
-    <div class="comparison-header fade-up">
-      <span class="section-label" style="justify-content:center"><span></span>A diferença é visível</span>
-      <h2 class="section-title">Com ou sem <em>terapia</em>?</h2>
-      <p class="section-sub">Veja como a terapia transforma a dinâmica do casal e da vida individual.</p>
-    </div>
-    <div class="compare-grid fade-up">
-      <div class="compare-col without">
-        <div class="compare-head">❌ Sem terapia</div>
-        <div class="compare-item">O casal se afasta física e emocionalmente</div>
-        <div class="compare-item">O desejo sexual vai se apagando aos poucos</div>
-        <div class="compare-item">A comunicação torna-se agressiva e tóxica</div>
-        <div class="compare-item">A admiração entre o casal desaparece</div>
-        <div class="compare-item">Ciúmes descontrolado e crises constantes</div>
-        <div class="compare-item">Toda a família sofre com o desequilíbrio</div>
-      </div>
-      <div class="vs-col">
-        <div class="vs-badge">vs</div>
-      </div>
-      <div class="compare-col with">
-        <div class="compare-head">✓ Com terapia</div>
-        <div class="compare-item">Proximidade física e emocional restaurada</div>
-        <div class="compare-item">O casal redescobre o desejo um pelo outro</div>
-        <div class="compare-item">Comunicação assertiva e respeitosa</div>
-        <div class="compare-item">Admiração e respeito mútuos renovados</div>
-        <div class="compare-item">Segurança emocional afasta os ciúmes</div>
-        <div class="compare-item">A família se sente mais unida e protegida</div>
+<!-- LEAD FORM -->
+<section class="lead-section" id="contato">
+  <div class="lead-inner">
+    <div class="reveal-left">
+      <div class="lead-badge">✦ Vagas Limitadas Este Mês</div>
+      <h2 class="section-title">PRONTO PARA<br><span style="color:var(--red)">CRESCER?</span></h2>
+      <p class="section-sub">Preencha o formulário e nossa equipe entrará em contato em até 24h com um diagnóstico gratuito do seu negócio.</p>
+      <div class="lead-items">
+        <div class="lead-item">Diagnóstico gratuito do seu marketing atual</div>
+        <div class="lead-item">Estratégia personalizada para o seu segmento</div>
+        <div class="lead-item">Estimativa de resultados em 90 dias</div>
+        <div class="lead-item">Sem compromisso, sem enrolação</div>
       </div>
     </div>
-    <div style="text-align:center;margin-top:52px">
-      <a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Quero%20dar%20o%20primeiro%20passo." class="btn-primary" target="_blank">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Quero essa transformação
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ════════ HOW IT WORKS ════════ -->
-<section class="how-it-works">
-  <div class="container">
-    <div class="how-header fade-up">
-      <span class="section-label">Simples e fácil</span>
-      <h2 class="section-title">Como <em>funciona</em>?</h2>
-    </div>
-    <div class="steps-row">
-      <div class="step fade-up">
-        <div class="step-num">1</div>
-        <h4>Entre em contato</h4>
-        <p>Mande uma mensagem pelo WhatsApp. Nossa equipe responde rapidamente.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-num">2</div>
-        <h4>Agende sua sessão</h4>
-        <p>Escolha o dia e horário que melhor se encaixam na sua rotina.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-num">3</div>
-        <h4>Acesse online</h4>
-        <p>As sessões são 100% online, pelo conforto e privacidade da sua casa.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-num">4</div>
-        <h4>Transforme sua vida</h4>
-        <p>Com o método da Paula, resultados reais podem aparecer desde a primeira sessão.</p>
+    <div class="reveal-right" style="position:relative;">
+      <div class="form-card" id="formCard">
+        <div class="success-overlay" id="successOverlay">
+          <div class="success-check">✅</div>
+          <div class="success-title">RECEBEMOS SEU CONTATO!</div>
+          <p class="success-msg">Nossa equipe entrará em contato em até 24h.<br>Fique de olho no WhatsApp!</p>
+        </div>
+        <h3 class="form-title">SOLICITAR DIAGNÓSTICO</h3>
+        <p class="form-subtitle">Gratuito e sem compromisso</p>
+        <div class="form-group">
+          <label>Seu Nome *</label>
+          <input type="text" id="f-nome" placeholder="Como podemos te chamar?">
+        </div>
+        <div class="form-group">
+          <label>WhatsApp *</label>
+          <input type="tel" id="f-tel" placeholder="(00) 00000-0000">
+        </div>
+        <div class="form-group">
+          <label>Segmento da Empresa *</label>
+          <select id="f-seg">
+            <option value="" disabled selected>Selecione seu segmento</option>
+            <option>Serviços B2B</option>
+            <option>E-commerce</option>
+            <option>Saúde & Estética</option>
+            <option>Imobiliário</option>
+            <option>Educação</option>
+            <option>Varejo</option>
+            <option>Tecnologia</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Faturamento Mensal Atual</label>
+          <select id="f-fat">
+            <option value="" disabled selected>Selecione uma faixa</option>
+            <option>Até R$20.000</option>
+            <option>R$20k – R$50k</option>
+            <option>R$50k – R$100k</option>
+            <option>R$100k – R$300k</option>
+            <option>Acima de R$300k</option>
+          </select>
+        </div>
+        <button class="btn-form" onclick="submitForm()">QUERO MEU DIAGNÓSTICO GRATUITO →</button>
+        <p class="form-trust">Seus dados estão protegidos e não serão compartilhados</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ INFO CARDS ════════ -->
-<section class="info-section">
-  <div class="container">
-    <div class="fade-up">
-      <span class="section-label">Sobre os atendimentos</span>
-      <h2 class="section-title">Tudo que você <em>precisa saber</em></h2>
-    </div>
-    <div class="info-grid">
-      <div class="info-card fade-up">
-        <div class="info-icon">
-          <svg width="24" height="24" fill="none" stroke="#C4846A" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        </div>
-        <h3>Duração das sessões</h3>
-        <p>Cada sessão tem entre 50 e 60 minutos, seja atendimento individual ou em casal, com foco total em você.</p>
-      </div>
-      <div class="info-card fade-up">
-        <div class="info-icon">
-          <svg width="24" height="24" fill="none" stroke="#C4846A" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>Sigilo garantido</h3>
-        <p>Os atendimentos têm total privacidade. O processo terapêutico é seguro e protegido pelo sigilo profissional.</p>
-      </div>
-      <div class="info-card fade-up">
-        <div class="info-icon">
-          <svg width="24" height="24" fill="none" stroke="#C4846A" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-        </div>
-        <h3>Suporte pelo WhatsApp</h3>
-        <p>Pacientes têm suporte via WhatsApp e ligação em situações de urgência, durante todo o processo terapêutico.</p>
-      </div>
-    </div>
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo">Growth<span>On</span></div>
+    <p class="footer-info" style="margin-top:8px">Marketing & Performance Digital<br>Responsável: Matheus</p>
   </div>
-</section>
+  <div class="footer-info" style="text-align:center">
+    <p>© 2025 GrowthOn. Todos os direitos reservados.</p>
+    <p>Crescimento previsível para empresas que querem mais.</p>
+  </div>
+  <a href="https://wa.me/5531992831454?text=Olá! Gostaria de um diagnóstico gratuito da GrowthOn." class="footer-wpp" target="_blank">
+    💬 Falar no WhatsApp
+  </a>
+</footer>
 
-<!-- ════════ FINAL CTA ════════ -->
-<section class="final-cta">
-  <div class="container">
-    <span class="section-label" style="justify-content:center"><span></span>Dê o primeiro passo hoje</span>
-    <h2 class="section-title" style="text-align:center">Você merece <em>ser feliz</em></h2>
-    <p class="section-sub" style="text-align:center;margin:0 auto 40px">Não deixe para amanhã o cuidado que você merece hoje. Entre em contato e agende sua primeira sessão com a Paula.</p>
-    <div class="btn-group">
-      <a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Quero%20agendar%20minha%20primeira%20sessão." class="btn-primary" target="_blank">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Agendar minha primeira sessão
-      </a>
-      <a href="https://wa.me/5571982415102?text=Olá%20Paula!%20Tenho%20algumas%20dúvidas%20antes%20de%20agendar." class="btn-outline" target="_blank">
-        Tenho dúvidas, quero conversar
-      </a>
-    </div>
-  </div>
-</section>
+<!-- FLOATING CTA -->
+<a href="https://wa.me/5531992831454?text=Olá! Gostaria de um diagnóstico gratuito da GrowthOn." class="floating-cta" target="_blank" title="Falar no WhatsApp">💬</a>
 
 <script>
-  // Fade-up on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        observer.unobserve(entry.target);
+// CURSOR
+const cursor = document.getElementById('cursor');
+const trail = document.getElementById('cursorTrail');
+let mx = 0, my = 0, tx = 0, ty = 0;
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top = my + 'px';
+});
+function animateTrail() {
+  tx += (mx - tx) * 0.12;
+  ty += (my - ty) * 0.12;
+  trail.style.left = tx + 'px';
+  trail.style.top = ty + 'px';
+  requestAnimationFrame(animateTrail);
+}
+animateTrail();
+document.querySelectorAll('a, button, .service-card, .diff-item').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.transform = 'translate(-50%,-50%) scale(2.5)'; trail.style.transform = 'translate(-50%,-50%) scale(1.5)'; });
+  el.addEventListener('mouseleave', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1)'; trail.style.transform = 'translate(-50%,-50%) scale(1)'; });
+});
+
+// PARTICLES
+const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+resize();
+window.addEventListener('resize', resize);
+class Particle {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.vx = (Math.random() - 0.5) * 0.4;
+    this.vy = (Math.random() - 0.5) * 0.4;
+    this.r = Math.random() * 1.5 + 0.3;
+    this.alpha = Math.random() * 0.6 + 0.1;
+    this.color = Math.random() > 0.7 ? '#D91E18' : Math.random() > 0.5 ? '#3ad06d' : '#ffffff';
+  }
+  update() {
+    this.x += this.vx; this.y += this.vy;
+    if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.globalAlpha = this.alpha;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+}
+for (let i = 0; i < 120; i++) particles.push(new Particle());
+function drawConnections() {
+  for (let i = 0; i < particles.length; i++) {
+    for (let j = i+1; j < particles.length; j++) {
+      const dx = particles[i].x - particles[j].x;
+      const dy = particles[i].y - particles[j].y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 100) {
+        ctx.beginPath();
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y);
+        ctx.strokeStyle = `rgba(217,30,24,${0.08 * (1 - dist/100)})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
       }
-    });
-  }, { threshold: 0.12 });
+    }
+  }
+}
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => { p.update(); p.draw(); });
+  drawConnections();
+  requestAnimationFrame(animate);
+}
+animate();
 
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+// SCROLL EFFECTS
+const progressBar = document.getElementById('progressBar');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+
+  // Reveal
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.88) el.classList.add('visible');
+  });
+});
+
+// COUNTERS
+const counters = document.querySelectorAll('.counter');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = +el.dataset.target;
+      let current = 0;
+      const step = target / 60;
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = Math.floor(current);
+        if (current >= target) clearInterval(timer);
+      }, 24);
+      observer.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => observer.observe(c));
+
+// FORM
+function submitForm() {
+  const nome = document.getElementById('f-nome').value.trim();
+  const tel = document.getElementById('f-tel').value.trim();
+  if (!nome || !tel) {
+    alert('Preencha seu nome e WhatsApp para continuar.');
+    return;
+  }
+  const seg = document.getElementById('f-seg').value || 'Não informado';
+  const fat = document.getElementById('f-fat').value || 'Não informado';
+  const msg = `Olá! Vim pelo site da GrowthOn. 🎯\n\nNome: ${nome}\nSegmento: ${seg}\nFaturamento: ${fat}\n\nGostaria de solicitar um diagnóstico gratuito!`;
+  document.getElementById('successOverlay').classList.add('show');
+  setTimeout(() => {
+    window.open(`https://wa.me/5531992831454?text=${encodeURIComponent(msg)}`, '_blank');
+  }, 1200);
+}
+
+// PHONE MASK
+document.getElementById('f-tel').addEventListener('input', function(e) {
+  let v = e.target.value.replace(/\D/g, '');
+  if (v.length > 11) v = v.slice(0,11);
+  if (v.length > 6) v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+  else if (v.length > 2) v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+  else if (v.length > 0) v = `(${v}`;
+  e.target.value = v;
+});
+
+// NAV SCROLL
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 80) nav.style.background = 'rgba(28,28,28,0.98)';
+  else nav.style.background = 'linear-gradient(180deg, rgba(28,28,28,0.95) 0%, transparent 100%)';
+});
+
+// HERO TITLE ANIMATION
+document.querySelectorAll('.hero-title .word').forEach((word, i) => {
+  word.style.animationDelay = `${0.15 + i * 0.1}s`;
+});
+
+// INITIAL REVEAL ON LOAD
+setTimeout(() => {
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) el.classList.add('visible');
+  });
+}, 100);
+
+// RESULT BAR ANIMATION
+const barObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.transition = 'width 1.5s ease';
+      barObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.result-bar').forEach(b => {
+  const w = b.style.width;
+  b.style.width = '0';
+  barObserver.observe(b);
+  setTimeout(() => { b.style.width = w; }, 300);
+});
 </script>
-
 </body>
 </html>
